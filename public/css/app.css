@@ -7464,7 +7464,7 @@ a.navbar-item:hover,
 a.navbar-item.is-active,
 a.navbar-link:hover,
 a.navbar-link.is-active {
-  background-color: whitesmoke;
+  background-color: #da4917;
   color: #3273dc;
 }
 
@@ -7636,8 +7636,8 @@ a.navbar-link.is-active {
   }
 
   .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
-    background-color: whitesmoke;
-    color: #0a0a0a;
+    background-color: #da4917;
+    color: white;
   }
 
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
@@ -7760,8 +7760,8 @@ a.navbar-link.is-active {
   }
 
   .navbar-dropdown a.navbar-item:hover {
-    background-color: whitesmoke;
-    color: #0a0a0a;
+    background-color: #da4917;
+    color: white;
   }
 
   .navbar-dropdown a.navbar-item.is-active {
@@ -7848,7 +7848,7 @@ a.navbar-link.is-active {
 
   .navbar-item.has-dropdown:hover .navbar-link,
   .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: whitesmoke;
+    background-color: #da4917;
   }
 }
 
@@ -11516,5 +11516,42 @@ h2,
 h3 {
   font-family: 'Changa One', Arial, Helvetica, sans-serif;
   font-weight: 400 !important;
+}
+
+.navbar.is-dark {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
+  background: #333333;
+  background: -webkit-gradient(linear, left top, right top, from(#333333), to(#111111));
+  background: linear-gradient(to right, #333333 0%, #111111 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111',GradientType=1 );
+}
+
+.navbar.is-dark .navbar-brand > a.navbar-item:hover,
+.navbar.is-dark .navbar-brand > a.navbar-item.is-active,
+.navbar.is-dark .navbar-brand .navbar-link:hover,
+.navbar.is-dark .navbar-brand .navbar-link.is-active,
+.navbar.is-dark .navbar-end > a.navbar-item:hover,
+.navbar.is-dark .navbar-end > div.has-dropdown > a.navbar-item:hover,
+.navbar.is-dark .navbar-end > div.navbar-item.has-dropdown > a.navbar-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #da4917;
+}
+
+.hero.is-primary.is-bold {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa872a+0,ba0c04+100 */
+  background: #fa872a;
+  background: linear-gradient(135deg, #fa872a 0%, #ba0c04 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa872a', endColorstr='#ba0c04',GradientType=1 );
+}
+
+.hero.is-dark.is-bold {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
+  background: #333333;
+  background: linear-gradient(135deg, #333333 0%, #111111 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111',GradientType=1 );
+}
+
+.button {
+  border-radius: 5px;
 }
 

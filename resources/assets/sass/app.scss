@@ -16,3 +16,42 @@ h1, h2, h3 {
     font-family: 'Changa One', Arial, Helvetica, sans-serif;
     font-weight: 400 !important;
 }
+
+.navbar.is-dark {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
+    background: #333333;
+    background: -moz-linear-gradient(left, #333333 0%, #111111 100%);
+    background: -webkit-linear-gradient(left, #333333 0%,#111111 100%); 
+    background: linear-gradient(to right, #333333 0%,#111111 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111',GradientType=1 ); 
+}
+
+.navbar.is-dark .navbar-brand > a.navbar-item:hover, .navbar.is-dark .navbar-brand > a.navbar-item.is-active, .navbar.is-dark .navbar-brand .navbar-link:hover, .navbar.is-dark .navbar-brand .navbar-link.is-active, 
+.navbar.is-dark .navbar-end > a.navbar-item:hover,
+.navbar.is-dark .navbar-end > div.has-dropdown > a.navbar-item:hover,
+.navbar.is-dark .navbar-end > div.navbar-item.has-dropdown > a.navbar-link:hover {
+    background-color: rgba(0,0,0,0.2);
+    color: $primary;
+}
+
+.hero.is-primary.is-bold {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa872a+0,ba0c04+100 */
+    background: #fa872a;
+    background: -moz-linear-gradient(-45deg, #fa872a 0%, #ba0c04 100%);
+    background: -webkit-linear-gradient(-45deg, #fa872a 0%,#ba0c04 100%);
+    background: linear-gradient(135deg, #fa872a 0%,#ba0c04 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa872a', endColorstr='#ba0c04',GradientType=1 );
+}
+
+.hero.is-dark.is-bold {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
+    background: #333333;
+    background: -moz-linear-gradient(-45deg, #333333 0%, #111111 100%);
+    background: -webkit-linear-gradient(-45deg, #333333 0%,#111111 100%);
+    background: linear-gradient(135deg, #333333 0%,#111111 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111',GradientType=1 );
+}
+
+.button {
+    border-radius: 5px;
+}
