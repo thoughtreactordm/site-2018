@@ -10,8 +10,6 @@
                 <h4 class="subtitle is-4">
                     A little something about the studio and how we build games.
                 </h4>
-
-                <button class="button is-primary is-large is-outlined is-inverted">Button</button>
             </div>
         </div>
     </section>
