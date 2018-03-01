@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
+
+Route::post('newsletter', 'NewsletterController@subscribe');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

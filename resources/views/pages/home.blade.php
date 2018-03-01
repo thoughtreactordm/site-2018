@@ -1,7 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-    
     <section class="hero is-medium is-primary is-bold">
         <div class="hero-body has-text-centered">
             <div class="container">
@@ -24,7 +23,7 @@
                     What we're working on...
                 </h1>
                 <h4 class="subtitle is-4">
-                    A feature on Combinus goes here.
+                    A feature on <a href="https://combinusgame.com">Combinus</a> goes here.
                 </h4>
 
                 <button class="button is-primary is-large">
@@ -60,17 +59,14 @@
                 <h4 class="subtitle is-4">
                     Sign up for news, updates, and exclusive offers!
                 </h4>
+                <p>
+                    <em>All fields required.</em>
+                </p>
 
                 <div class="columns">
                     <div class="column is-4 is-offset-4">
-                        <div class="field">
-                            <input type="text" class="input is-medium" placeholder="Your email...">
-                        </div>
-                        <div class="field">
-                            <button class="button is-medium is-fullwidth is-primary is-outlined">
-                                Sign up!
-                            </button>
-                        </div>
+
+                        @include('pages.partials.newsletter-form')
                     </div>
                 </div>
             </div>
