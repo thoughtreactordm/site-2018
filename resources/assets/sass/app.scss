@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Changa+One|Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Changa+One|Source+Sans+Pro:400,700|Barlow+Condensed');
 // Variables
 @import "variables";
 // Bootstrap
@@ -56,4 +56,24 @@ div.notification.is-primary {
 
 .button {
   border-radius: 5px;
+}
+
+.is-combinus {
+  background: #e1e1d5 url('/img/noisebg.png');
+  .combinus-body {
+    h2 {
+      font-family: "Barlow Condensed", "Source Sans Pro", sans-serif;
+      font-size: 32px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    font-size: 20px;
+    color: #222;
+    text-shadow: 0 0 3px rgba(0,0,0,0.2);
+  }
+
+  img.combinus-screen {
+    border: 2px solid #222;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  }
 }
