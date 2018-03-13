@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ setting('site.title') }}</title>
-
+    @include('layouts.partials.meta')
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
 <div id="app">
+    <button class="menu-toggle is-hidden-tablet" @click.prevent="toggleMenu()">
+        <i class="fas fa-bars fa-2x"></i>
+    </button>
+    <section class="menu-fader"
+             :class="{ 'active': menu }"
+             @dblclick.prevent="toggleMenu()"
+    ></section>
     @include('layouts.partials.nav')
 
-    @yield('content')
-
-    @include('layouts.partials.footer')
+    <section class="main" :class="{ 'noscroll': menu }">
+        @yield('content')
+    </section>
 </div>
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script async src="/js/app.js"></script>
 </body>
 </html>

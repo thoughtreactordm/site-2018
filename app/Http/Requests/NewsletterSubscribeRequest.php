@@ -27,8 +27,7 @@ class NewsletterSubscribeRequest extends FormRequest
     {
         return [
             'email' => 'required|email|max:255',
-            'first_name' => 'required|max:100',
-            'last_name' => 'required|max:100'
+            'name' => 'required|max:100'
         ];
     }
 }

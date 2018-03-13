@@ -10,15 +10,12 @@ class NewsletterController extends Controller
 {
     public function subscribe(NewsletterSubscribeRequest $request)
     {
-        $this->validate($request);
-
         Newsletter::subscribe($request->email, [
-            'FNAME' => $request->first_name,
-            'LNAME' => $request->last_name
+            'NAME' => $request->name,
         ]);
 
         session()->flash('success');
 
-        return redirect('/#newsletter');
+        return redirect('/');
     }
 }

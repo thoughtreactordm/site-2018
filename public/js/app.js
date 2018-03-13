@@ -977,7 +977,22 @@ window.Vue = __webpack_require__(35);
 Vue.component('example', __webpack_require__(38));
 
 var app = new Vue({
-    el: '#app'
+    el: '#app',
+
+    data: {
+        menu: false
+    },
+
+    methods: {
+        toggleMenu: function toggleMenu() {
+            this.menu = !this.menu;
+
+            var scroll = this.menu ? 'hidden' : 'auto';
+
+            $('html').css('overflow', scroll);
+            $('body').css('overflow', scroll);
+        }
+    }
 });
 
 /***/ }),

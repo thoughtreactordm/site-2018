@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Changa+One|Source+Sans+Pro:400,700|Barlow+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Changa+One|Source+Sans+Pro:400,700|Source+Serif+Pro:400,700');
 // Variables
 @import "variables";
 // Bootstrap
@@ -7,31 +7,133 @@
 
 body {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  font-size: 1.3rem;
+
+  &::-webkit-scrollbar-track {
+    width: 8px;
+    background-color: #222;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: $primary;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: $primary;
+  }
+}
+
+a {
+  color: $primary;
 }
 
 h1, h2, h3 {
   font-family: 'Changa One', Arial, Helvetica, sans-serif;
   font-weight: 400 !important;
-}
-
-.navbar.is-dark {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
-  background: #333333;
-  background: -moz-linear-gradient(left, #333333 0%, #111111 100%);
-  background: -webkit-linear-gradient(left, #333333 0%, #111111 100%);
-  background: linear-gradient(to right, #333333 0%, #111111 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#111111', GradientType=1);
-}
-
-.navbar.is-dark .navbar-brand > a.navbar-item:hover, .navbar.is-dark .navbar-brand > a.navbar-item.is-active, .navbar.is-dark .navbar-brand .navbar-link:hover, .navbar.is-dark .navbar-brand .navbar-link.is-active,
-.navbar.is-dark .navbar-end > a.navbar-item:hover,
-.navbar.is-dark .navbar-end > div.has-dropdown > a.navbar-item:hover,
-.navbar.is-dark .navbar-end > div.navbar-item.has-dropdown > a.navbar-link:hover {
-  background-color: rgba(0, 0, 0, 0.2);
   color: $primary;
 }
 
-.hero.is-primary.is-bold,
+div.content {
+  h1, h2, h3 {
+    font-family: 'Changa One', Arial, Helvetica, sans-serif;
+    font-weight: 400 !important;
+    color: $primary;
+  }
+}
+
+nav.sidebar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
+  background: #333333;
+  background: -moz-linear-gradient(-45deg, #333333 0%, #111111 100%);
+  background: -webkit-linear-gradient(-45deg, #333333 0%, #111111 100%);
+  background: linear-gradient(135deg, #333333 0%, #111111 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#111111', GradientType=1);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 300px;
+  overflow-x: hidden;
+  height: 101vh;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+
+  &::-webkit-scrollbar-track {
+    width: 8px;
+    background-color: #222;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: $primary;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: $primary;
+  }
+
+  a.nav-brand {
+    transition: opacity 0.1s ease-in;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  img.nav-logo {
+    max-width: 180px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+  }
+
+  div.nav-social {
+    a {
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  div.nav-links {
+    margin: 1em 0;
+    a {
+      display: block;
+      color: #666;
+      font-weight: 700;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  div.nav-form {
+    width: 100%;
+  }
+}
+
+section.main {
+  margin-left: 300px;
+
+  div.content {
+    padding: 1em 2em;
+  }
+
+  &.noscroll {
+    overflow: auto;
+  }
+}
+
+div.notification {
+  font-size: 1rem;
+}
+
+section.is-primary.is-bold,
 div.notification.is-primary {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa872a+0,ba0c04+100 */
   background: #fa872a;
@@ -41,7 +143,7 @@ div.notification.is-primary {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa872a', endColorstr='#ba0c04', GradientType=1);
 }
 
-.hero.is-dark.is-bold {
+section.is-dark.is-bold {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
   background: #333333;
   background: -moz-linear-gradient(-45deg, #333333 0%, #111111 100%);
@@ -58,22 +160,65 @@ div.notification.is-primary {
   border-radius: 5px;
 }
 
-.is-combinus {
-  background: #e1e1d5 url('/img/noisebg.png');
-  .combinus-body {
-    h2 {
-      font-family: "Barlow Condensed", "Source Sans Pro", sans-serif;
-      font-size: 32px;
-      text-transform: uppercase;
-      text-align: center;
+div.blog-body {
+  font-family: 'Source Serif Pro', serif;
+}
+
+button.menu-toggle {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa872a+0,ba0c04+100 */
+  background: #fa872a;
+  background: -moz-linear-gradient(-45deg, #fa872a 0%, #ba0c04 100%);
+  background: -webkit-linear-gradient(-45deg, #fa872a 0%, #ba0c04 100%);
+  background: linear-gradient(135deg, #fa872a 0%, #ba0c04 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa872a', endColorstr='#ba0c04', GradientType=1);
+  color: white;
+  outline: 0;
+  border: 0;
+  padding: 12px;
+  height: 48px;
+
+  &:active, :focus {
+    opacity: 0.9;
+  }
+}
+
+section.menu-fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 101vh;
+  height: 101vh;
+  background-color: rgba(0,0,0,0.8);
+  pointer-events: auto;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  nav.sidebar {
+    left: -300px;
+    transition: all 0.2s ease-in-out;
+
+    &.active {
+      left: 0;
     }
-    font-size: 20px;
-    color: #222;
-    text-shadow: 0 0 3px rgba(0,0,0,0.2);
+
+    img.nav-logo {
+      max-width: 120px;
+    }
   }
 
-  img.combinus-screen {
-    border: 2px solid #222;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  section.main {
+    margin-left: 0;
   }
 }

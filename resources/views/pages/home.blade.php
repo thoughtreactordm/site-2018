@@ -1,79 +1,100 @@
 @extends('layouts.master')
 
 @section('content')
-    {{--<section class="hero is-primary is-bold">--}}
-        {{--<div class="hero-body has-text-centered">--}}
-            {{--<div class="container">--}}
-                {{--<h1 class="title is-2">--}}
-                    {{--Engage. Entertain. Enlighten.--}}
-                {{--</h1>--}}
-                {{--<h4 class="subtitle is-4">--}}
-                    {{--Building games with artistic flair and challenging gameplay is our passion.--}}
-                {{--</h4>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</section>--}}
-
-    <section class="hero is-medium is-combinus">
-        <div class="hero-body">
-            {{--LOGO CONTAINER--}}
-            <div class="is-flex" style="justify-content: center">
-                <div>
-                    <img src="/img/combinus-logo.png" alt="COMBINUS" height="auto">
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="columns combinus-body">
-                    <div class="column is-offset-2 is-8">
-                        <h2>The Classic Push Puzzle - Redefined.</h2>
-                        <em>COMBINUS</em> is a mechanically simple but challengingly deep puzzle game where players move
-                        and combine shapes together to clear them from a game board. Shapes have unique characteristics
-                        and can take on one of four states adding to the complexity of how they move and combine.
-                    </div>
-                </div>
-
-                <div class="columns">
-                    <div class="column is-4">
-                        <img src="/img/mock-screen.png" class="combinus-screen"
-                             alt="Combinus Screenshot"
-                        >
-                    </div>
-                    <div class="column is-4">
-                        <img src="/img/mock-screen.png" class="combinus-screen"
-                             alt="Combinus Screenshot"
-                        >
-                    </div>
-                    <div class="column is-4">
-                        <img src="/img/mock-screen.png" class="combinus-screen"
-                             alt="Combinus Screenshot"
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section style="background-image: url('/img/mock-screen.png'); height: 250px;">
     </section>
+    <div class="content">
+        <h1>Hello world!</h1>
 
-    <section class="hero is-medium is-dark is-bold" id="newsletter">
-        <div class="hero-body has-text-centered">
-            <div class="container">
-                <h1 class="title is-2">
-                    Newsletter
-                </h1>
-                <h4 class="subtitle is-4">
-                    Sign up for news, updates, and exclusive offers!
-                </h4>
-                <p>
-                    <em>All fields required.</em>
-                </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+            dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+            Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in
+            libero. </p>
 
-                <div class="columns">
-                    <div class="column is-4 is-offset-4">
-                        @include('pages.partials.newsletter-form')
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+            Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+            risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris
+            ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
+            velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
 
+        <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis
+            turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+            Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed
+            lectus. </p>
+
+        <p>Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
+            interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue
+            congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit
+            vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet
+            mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. </p>
+
+        <p>Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi.
+            Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget
+            ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut
+            orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at
+            pede suscipit sodales. </p>
+
+        <p>Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis
+            et, viverra vitae, ligula. Nulla ut felis in purus aliquam imperdiet. Maecenas aliquet mollis lectus.
+            Vivamus consectetuer risus et tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+            Duis sagittis ipsum. </p>
+
+        <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+            sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In
+            scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas
+            porttitor. </p>
+
+        <p>Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia
+            aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat
+            condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus
+            ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus
+            consequat imperdiet. Vestibulum sapien. Proin quam. </p>
+
+        <p>Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus
+            magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia
+            molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in
+            ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.
+            Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. </p>
+
+        <p>Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus.
+            Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim
+            in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi
+            lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis,
+            aliquet eget, justo. </p>
+
+        <p>Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis
+            id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in
+            purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer risus et tortor. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
+            diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. </p>
+
+        <p>Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum
+            lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque
+            nibh. Aenean quam. </p>
+
+        <p>In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas
+            porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula
+            lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque
+            volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Nam nec ante. </p>
+
+        <p>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla
+            facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum
+            sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer
+            euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum
+            magna augue eget diam. </p>
+
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia
+            molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in
+            ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.
+            Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui
+            quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
+    </div>
 @endsection

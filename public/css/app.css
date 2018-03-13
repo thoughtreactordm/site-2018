@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Changa+One|Source+Sans+Pro:400,700|Barlow+Condensed);/*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
+@import url(https://fonts.googleapis.com/css?family=Changa+One|Source+Sans+Pro:400,700|Source+Serif+Pro:400,700);/*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 
 @-webkit-keyframes spinAround {
   from {
@@ -11509,6 +11509,27 @@ label.panel-block:hover {
 
 body {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  font-size: 1.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  width: 8px;
+  background-color: #222;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #da4917;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: #da4917;
+}
+
+a {
+  color: #da4917;
 }
 
 h1,
@@ -11516,28 +11537,119 @@ h2,
 h3 {
   font-family: 'Changa One', Arial, Helvetica, sans-serif;
   font-weight: 400 !important;
-}
-
-.navbar.is-dark {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
-  background: #333333;
-  background: -webkit-gradient(linear, left top, right top, from(#333333), to(#111111));
-  background: linear-gradient(to right, #333333 0%, #111111 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#111111', GradientType=1);
-}
-
-.navbar.is-dark .navbar-brand > a.navbar-item:hover,
-.navbar.is-dark .navbar-brand > a.navbar-item.is-active,
-.navbar.is-dark .navbar-brand .navbar-link:hover,
-.navbar.is-dark .navbar-brand .navbar-link.is-active,
-.navbar.is-dark .navbar-end > a.navbar-item:hover,
-.navbar.is-dark .navbar-end > div.has-dropdown > a.navbar-item:hover,
-.navbar.is-dark .navbar-end > div.navbar-item.has-dropdown > a.navbar-link:hover {
-  background-color: rgba(0, 0, 0, 0.2);
   color: #da4917;
 }
 
-.hero.is-primary.is-bold,
+div.content h1,
+div.content h2,
+div.content h3 {
+  font-family: 'Changa One', Arial, Helvetica, sans-serif;
+  font-weight: 400 !important;
+  color: #da4917;
+}
+
+nav.sidebar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
+  background: #333333;
+  background: linear-gradient(135deg, #333333 0%, #111111 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#111111', GradientType=1);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 300px;
+  overflow-x: hidden;
+  height: 101vh;
+  padding: 1em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.sidebar::-webkit-scrollbar-track {
+  width: 8px;
+  background-color: #222;
+}
+
+nav.sidebar::-webkit-scrollbar {
+  width: 8px;
+  background-color: #da4917;
+}
+
+nav.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: #da4917;
+}
+
+nav.sidebar a.nav-brand {
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+}
+
+nav.sidebar a.nav-brand:hover {
+  opacity: 0.8;
+}
+
+nav.sidebar img.nav-logo {
+  max-width: 180px;
+}
+
+nav.sidebar h1,
+nav.sidebar h2,
+nav.sidebar h3,
+nav.sidebar h4,
+nav.sidebar h5,
+nav.sidebar h6 {
+  color: #da4917;
+}
+
+nav.sidebar div.nav-social a:hover {
+  color: white;
+}
+
+nav.sidebar div.nav-links {
+  margin: 1em 0;
+}
+
+nav.sidebar div.nav-links a {
+  display: block;
+  color: #666;
+  font-weight: 700;
+}
+
+nav.sidebar div.nav-links a:hover {
+  color: #da4917;
+}
+
+nav.sidebar div.nav-form {
+  width: 100%;
+}
+
+section.main {
+  margin-left: 300px;
+}
+
+section.main div.content {
+  padding: 1em 2em;
+}
+
+section.main.noscroll {
+  overflow: auto;
+}
+
+div.notification {
+  font-size: 1rem;
+}
+
+section.is-primary.is-bold,
 div.notification.is-primary {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa872a+0,ba0c04+100 */
   background: #fa872a;
@@ -11545,14 +11657,14 @@ div.notification.is-primary {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa872a', endColorstr='#ba0c04', GradientType=1);
 }
 
-.hero.is-dark.is-bold {
+section.is-dark.is-bold {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
   background: #333333;
   background: linear-gradient(135deg, #333333 0%, #111111 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#111111', GradientType=1);
 }
 
-.hero.is-dark.is-bold .hero-body .title {
+section.is-dark.is-bold .hero-body .title {
   color: #da4917;
 }
 
@@ -11560,26 +11672,67 @@ div.notification.is-primary {
   border-radius: 5px;
 }
 
-.is-combinus {
-  background: #e1e1d5 url("/img/noisebg.png");
+div.blog-body {
+  font-family: 'Source Serif Pro', serif;
 }
 
-.is-combinus .combinus-body {
-  font-size: 20px;
-  color: #222;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+button.menu-toggle {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa872a+0,ba0c04+100 */
+  background: #fa872a;
+  background: linear-gradient(135deg, #fa872a 0%, #ba0c04 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa872a', endColorstr='#ba0c04', GradientType=1);
+  color: white;
+  outline: 0;
+  border: 0;
+  padding: 12px;
+  height: 48px;
 }
 
-.is-combinus .combinus-body h2 {
-  font-family: "Barlow Condensed", "Source Sans Pro", sans-serif;
-  font-size: 32px;
-  text-transform: uppercase;
-  text-align: center;
+button.menu-toggle:active,
+button.menu-toggle :focus {
+  opacity: 0.9;
 }
 
-.is-combinus img.combinus-screen {
-  border: 2px solid #222;
-  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+section.menu-fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 101vh;
+  height: 101vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+section.menu-fader.active {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  nav.sidebar {
+    left: -300px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  nav.sidebar.active {
+    left: 0;
+  }
+
+  nav.sidebar img.nav-logo {
+    max-width: 120px;
+  }
+
+  section.main {
+    margin-left: 0;
+  }
 }
 

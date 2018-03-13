@@ -1,42 +1,40 @@
-<nav class="navbar is-dark">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">
-                <img src="/img/nav-logo.png" alt="Thought Reactor" width="180px" height="72px">
-            </a>
+<nav class="sidebar" :class="{ 'active': menu }">
+    <a href="/" class="nav-brand">
+        <img src="/img/vert-logo.svg" alt="" class="nav-logo">
+    </a>
 
-            <div class="navbar-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+    <div class="nav-social">
+        <a href="https://facebook.com/ThoughtReactor">
+            <i class="fab fa-facebook fa-fw fa-lg"></i>
+        </a>
 
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <a href="/" class="navbar-item">Home</a>
+        <a href="https://twitter.com/thought_reactor">
+            <i class="fab fa-twitter-square fa-fw fa-lg"></i>
+        </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Games
-                    </a>
+        <a href="https://youtube.com/TheThoughtReactor">
+            <i class="fab fa-youtube-square fa-fw fa-lg"></i>
+        </a>
 
-                    <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item">
-                            Combinus
-                        </a>
-                        <a class="navbar-item">
-                            IGEO
-                        </a>
-                        <a class="navbar-item">
-                            Pie Quest
-                        </a>
-                    </div>
-                </div>
+        <a href="https://github.com/thoughtreactordm">
+            <i class="fab fa-github-square fa-fw fa-lg"></i>
+        </a>
 
-                <a href="/" class="navbar-item">Press</a>
-                <a href="/" class="navbar-item">About</a>
-            </div>
-        </div>
+        <a href="https://discord.gg/SjAPDGm">
+            <i class="fab fa-discord fa-fw fa-lg" style="position: relative; top: 1px;"></i>
+        </a>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Blog</a>
+        <a href="/games">Games</a>
+        <a href="/team">Team</a>
+        <a href="/about">About</a>
+    </div>
+
+    <div class="nav-form">
+        <h4 class="title is-4"  style="margin-bottom: 0;">Subscribe</h4>
+        <small style="margin-bottom: 6px;"><em>Sign up for updates!</em></small>
+        @include('pages.partials.newsletter-form')
     </div>
 </nav>
