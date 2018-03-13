@@ -13,9 +13,10 @@
              :class="{ 'active': menu }"
              @dblclick.prevent="toggleMenu()"
     ></section>
+    <div class="scroll-shim" v-show="menu"></div>
     @include('layouts.partials.nav')
 
-    <section class="main" :class="{ 'noscroll': menu }">
+    <section class="main">
         @yield('content')
     </section>
 </div>

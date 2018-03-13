@@ -11716,6 +11716,14 @@ section.menu-fader.active {
   opacity: 1;
 }
 
+div.scroll-shim {
+  background-color: #222;
+  width: 8px;
+  height: 101vh;
+  position: fixed;
+  right: -8px;
+}
+
 @media (max-width: 768px) {
   nav.sidebar {
     left: -300px;
