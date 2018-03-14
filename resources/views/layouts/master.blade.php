@@ -6,6 +6,13 @@
 </head>
 <body>
 <div id="app">
+
+    <transition name="fade">
+        <div class="loading" v-show="loading">
+            <i class="fas fa-spinner fa-spin fa-3x"></i>
+        </div>
+    </transition>
+
     <button class="menu-toggle is-hidden-tablet" @click.prevent="toggleMenu()">
         <i class="fas fa-bars fa-2x"></i>
     </button>
@@ -22,8 +29,6 @@
         @include('layouts.partials.footer')
     </section>
 </div>
-
-<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 <script src="/js/app.js"></script>
 @yield('scripts')
 </body>

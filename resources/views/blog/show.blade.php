@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <section class="section related is-primary is-bold has-text-centered">
+    <section class="section related has-text-centered">
         <h3 class="title is-3">
             Related Posts
         </h3>
@@ -45,7 +45,6 @@
     <script>
         $("#shares").jsSocials({
             shares: [
-                "email",
                 {
                     share: "twitter",
                     logo: "fab fa-twitter"
