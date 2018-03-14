@@ -7981,7 +7981,7 @@ a.navbar-link.is-active {
 .pagination-previous:focus,
 .pagination-next:focus,
 .pagination-link:focus {
-  border-color: #3273dc;
+  border-color: #da4917;
 }
 
 .pagination-previous:active,
@@ -11530,6 +11530,8 @@ body::-webkit-scrollbar-thumb {
 
 a {
   color: #da4917;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 h1,
@@ -11617,16 +11619,25 @@ nav.sidebar div.nav-social a:hover {
 
 nav.sidebar div.nav-links {
   margin: 1em 0;
+  width: 100%;
 }
 
 nav.sidebar div.nav-links a {
   display: block;
   color: #666;
   font-weight: 700;
+  border-bottom: 2px solid transparent;
+}
+
+nav.sidebar div.nav-links a:active,
+nav.sidebar div.nav-links a.active {
+  color: white;
+  border-bottom: 2px solid white;
 }
 
 nav.sidebar div.nav-links a:hover {
   color: #da4917;
+  border-bottom: 2px solid #da4917;
 }
 
 nav.sidebar div.nav-form {
@@ -11647,6 +11658,35 @@ section.main.noscroll {
 
 div.notification {
   font-size: 1rem;
+}
+
+section.related div.columns {
+  max-width: 1000px;
+  margin: auto;
+}
+
+section.related h3.title {
+  color: white;
+}
+
+section.related h4.related-title {
+  color: #222;
+}
+
+section.related div.card {
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+section.related div.card:hover {
+  -webkit-box-shadow: 0 6px 10px rgba(10, 10, 10, 0.1);
+          box-shadow: 0 6px 10px rgba(10, 10, 10, 0.1);
+}
+
+section.related div.card div.card-image img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 section.is-primary.is-bold,
@@ -11670,6 +11710,8 @@ section.is-dark.is-bold .hero-body .title {
 
 .button {
   border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 div.blog-body {
@@ -11706,7 +11748,7 @@ section.menu-fader {
   width: 101vh;
   height: 101vh;
   background-color: rgba(0, 0, 0, 0.8);
-  pointer-events: auto;
+  pointer-events: none;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
@@ -11714,6 +11756,7 @@ section.menu-fader {
 
 section.menu-fader.active {
   opacity: 1;
+  pointer-events: auto;
 }
 
 div.scroll-shim {
@@ -11722,6 +11765,12 @@ div.scroll-shim {
   height: 101vh;
   position: fixed;
   right: -8px;
+}
+
+section.blog-header-image {
+  height: 250px;
+  background-color: #222;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {

@@ -1,8 +1,9 @@
 require('./bootstrap');
+require('jssocials/dist/jssocials');
+require('jssocials/dist/jssocials.css');
+require('jssocials/dist/jssocials-theme-flat.css');
 
 window.Vue = require('vue');
-
-Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
     el: '#app',

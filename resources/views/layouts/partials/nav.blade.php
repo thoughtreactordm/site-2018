@@ -4,20 +4,20 @@
     </a>
 
     <div class="nav-social">
-        <a href="https://facebook.com/ThoughtReactor">
-            <i class="fab fa-facebook fa-fw fa-lg"></i>
+        <a href="https://twitter.com/thought_reactor">
+            <i class="fab fa-twitter fa-fw fa-lg"></i>
         </a>
 
-        <a href="https://twitter.com/thought_reactor">
-            <i class="fab fa-twitter-square fa-fw fa-lg"></i>
+        <a href="https://twitch.tv/thoughtreactordev">
+            <i class="fab fa-twitch fa-fw fa-lg"></i>
         </a>
 
         <a href="https://youtube.com/TheThoughtReactor">
-            <i class="fab fa-youtube-square fa-fw fa-lg"></i>
+            <i class="fab fa-youtube fa-fw fa-lg"></i>
         </a>
 
-        <a href="https://github.com/thoughtreactordm">
-            <i class="fab fa-github-square fa-fw fa-lg"></i>
+        <a href="https://facebook.com/ThoughtReactor">
+            <i class="fab fa-facebook fa-fw fa-lg"></i>
         </a>
 
         <a href="https://discord.gg/SjAPDGm">
@@ -26,10 +26,10 @@
     </div>
 
     <div class="nav-links">
-        <a href="/">Blog</a>
+        <a href="/" class="active">Blog</a>
         <a href="/games">Games</a>
-        <a href="/team">Team</a>
-        <a href="/about">About</a>
+        <a href="/team">About</a>
+        <a href="/about">Press</a>
     </div>
 
     <div class="nav-form">

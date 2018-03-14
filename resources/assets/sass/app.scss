@@ -26,6 +26,7 @@ body {
 
 a {
   color: $primary;
+  transition: all 0.1s ease-in-out;
 }
 
 h1, h2, h3 {
@@ -101,13 +102,21 @@ nav.sidebar {
 
   div.nav-links {
     margin: 1em 0;
+    width: 100%;
+
     a {
       display: block;
       color: #666;
       font-weight: 700;
+      border-bottom: 2px solid transparent;
 
+      &:active, &.active {
+        color: white;
+        border-bottom: 2px solid white;
+      }
       &:hover {
         color: $primary;
+        border-bottom: 2px solid $primary;
       }
     }
   }
@@ -131,6 +140,34 @@ section.main {
 
 div.notification {
   font-size: 1rem;
+}
+
+section.related {
+  div.columns {
+    max-width: 1000px;
+    margin: auto;
+  }
+  h3.title {
+    color: white;
+  }
+
+  h4.related-title {
+    color: #222;
+  }
+
+  div.card {
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(10,10,10,0.1);
+    }
+
+    div.card-image img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
 }
 
 section.is-primary.is-bold,
@@ -158,6 +195,7 @@ section.is-dark.is-bold {
 
 .button {
   border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 div.blog-body {
@@ -195,12 +233,13 @@ section.menu-fader {
   width: 101vh;
   height: 101vh;
   background-color: rgba(0,0,0,0.8);
-  pointer-events: auto;
+  pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 
   &.active {
     opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -210,6 +249,12 @@ div.scroll-shim {
   height: 101vh;
   position: fixed;
   right: -8px;
+}
+
+section.blog-header-image {
+  height: 250px;
+  background-color: #222;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {

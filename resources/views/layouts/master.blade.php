@@ -18,10 +18,13 @@
 
     <section class="main">
         @yield('content')
+
+        @include('layouts.partials.footer')
     </section>
 </div>
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-<script async src="/js/app.js"></script>
+<script src="/js/app.js"></script>
+@yield('scripts')
 </body>
 </html>
