@@ -26,10 +26,9 @@
     </div>
 
     <div class="nav-links">
-        <a href="/" class="active">Blog</a>
-        <a href="/games">Games</a>
-        <a href="/team">About</a>
-        <a href="/about">Press</a>
+        <a href="/" id="blog">Blog</a>
+        <a href="https://thoughtreactor.itch.io" target="_blank">Games</a>
+        <a href="/about" id="about">About</a>
     </div>
 
     <div class="nav-form">

@@ -11570,8 +11570,8 @@ div.loading {
 
 .fade-enter-active,
 .fade-leave-active {
-  -webkit-transition: opacity .25s;
-  transition: opacity .25s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
 }
 
 .fade-enter,
@@ -11723,7 +11723,11 @@ section.related div.card div.card-image img {
   border-top-right-radius: 5px;
 }
 
-section.is-primary.is-bold,
+.content figure {
+  margin: 0;
+}
+
+section.hero.is-primary.is-bold,
 div.notification.is-primary {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa872a+0,ba0c04+100 */
   background: #fa872a;

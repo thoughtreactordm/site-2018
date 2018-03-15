@@ -36,9 +36,11 @@ const app = new Vue({
 
     mounted() {
         this.loading = false;
+        var self = this;
 
-        $("a").click((e) => {
-            this.loading = true;
+        $("a").click(function(e) {
+            if (($(this).attr("href") !== undefined) && ($(this).attr("target") === undefined))
+                self.loading = true;
         });
     },
 

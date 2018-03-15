@@ -24,6 +24,16 @@
             <div id="shares"></div>
             <hr>
         </div>
+
+        <div class="has-text-right">
+            @if(isset($previous))
+                <a href="/blog/{{ $previous->slug }}" class="button">« Previous</a>
+            @endif
+
+            @if(isset($next))
+                <a href="/blog/{{ $next->slug }}" class="button">Next »</a>
+            @endif
+        </div>
     </div>
 
     <section class="section related has-text-centered">
@@ -62,5 +72,7 @@
             url: "{{ url()->current() }}",
             text: "{!! $post->excerpt !!}"
         });
+
+        $("a#blog").addClass('active');
     </script>
 @endsection

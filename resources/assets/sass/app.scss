@@ -56,7 +56,7 @@ div.loading {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .25s;
+  transition: opacity .2s;
 }
 
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
@@ -194,7 +194,11 @@ section.related {
   }
 }
 
-section.is-primary.is-bold,
+.content figure {
+  margin: 0;
+}
+
+section.hero.is-primary.is-bold,
 div.notification.is-primary {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa872a+0,ba0c04+100 */
   background: #fa872a;

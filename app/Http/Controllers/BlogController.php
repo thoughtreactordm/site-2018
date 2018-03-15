@@ -15,6 +15,14 @@ class BlogController extends Controller
             ->take(3)
             ->get();
 
-        return view('blog.show', compact('post', 'related'));
+        $previous = Post::where('id', '>', $post->id)->first();
+        $next = Post::where('id', '<', $post->id)->orderBy('id', 'desc')->first();
+
+        return view('blog.show', [
+            'post' => $post,
+            'related' => $related,
+            'previous' => $previous,
+            'next' => $next
+        ]);
     }
 }
