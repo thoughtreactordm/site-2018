@@ -17,7 +17,7 @@
                 </p>
 
                 <p>
-                    We bleed video gaming and want to transmit that passion into our craft. Like many studios we've kind of set into a niche - challenging, puzzle-driven games that test logic, reflexes, and spacial reasoning. Thought Reactor believes games that challenge those faculties can not only be insanely fun but incredibly rewarding, allowing players to sharpen their minds and engage areas of their brain often neglected by daily life.
+                    We bleed video gaming and want to transmit that passion into our craft. Like many studios we've sort of fallen into a niche - challenging, puzzle-driven games that test logic, reflexes, and spacial reasoning. Thought Reactor believes games that challenge those faculties can not only be insanely fun but incredibly rewarding, allowing players to sharpen their minds and engage areas of their brain often neglected by daily life.
                 </p>
 
                 <p>
@@ -29,7 +29,10 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-6by9">
-                            <img src="https://img.itch.zone/aW1hZ2UvNjMwMTYvNTM2MDg2LmpwZw==/original/8S3Yft.jpg" alt="IGEO, our latest puzzle game">
+                            <a href="https://img.itch.zone/aW1hZ2UvNjMwMTYvNTM2MDg2LmpwZw==/original/8S3Yft.jpg"
+                                    data-lightbox="igeo-1" data-title="IGEO, our latest puzzle game">
+                                <img src="https://img.itch.zone/aW1hZ2UvNjMwMTYvNTM2MDg2LmpwZw==/original/8S3Yft.jpg" alt="IGEO, our latest puzzle game">
+                            </a>
                         </figure>
                     </div>
 

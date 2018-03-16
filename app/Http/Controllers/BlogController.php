@@ -12,6 +12,8 @@ class BlogController extends Controller
         $post = Post::whereSlug($slug)->first();
         $related = Post::latest()
             ->where('category_id', $post->category_id)
+            ->where('id', '<>', $post->id)
+            ->orderBy('created_at', 'desc')
             ->take(3)
             ->get();
 

@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Engaging Games')
+@section('title', 'Engaging Indie Games')
 
 @section('content')
     @foreach($posts as $post)

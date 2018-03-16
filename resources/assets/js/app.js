@@ -2,6 +2,8 @@ require('./bootstrap');
 require('jssocials/dist/jssocials');
 require('jssocials/dist/jssocials.css');
 require('jssocials/dist/jssocials-theme-flat.css');
+require('lightbox2/dist/js/lightbox');
+require('lightbox2/dist/css/lightbox.css');
 
 import fontawesome from '@fortawesome/fontawesome';
 import faBars from '@fortawesome/fontawesome-free-solid/faBars';
@@ -39,7 +41,9 @@ const app = new Vue({
         var self = this;
 
         $("a").click(function(e) {
-            if (($(this).attr("href") !== undefined) && ($(this).attr("target") === undefined))
+            if (($(this).attr("href") !== undefined)
+                && ($(this).attr("target") === undefined)
+                && ($(this).data("lightbox") === undefined))
                 self.loading = true;
         });
     },
