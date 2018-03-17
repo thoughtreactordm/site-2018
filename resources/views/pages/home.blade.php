@@ -1,3 +1,7 @@
+<?php
+$page = ['description' => 'We build engaging indie games with challenging gameplay and artistic expression. Follow the blog as we work on games and participate in game jams.'];
+?>
+
 @extends('layouts.master')
 
 @section('title', 'Engaging Indie Games')
