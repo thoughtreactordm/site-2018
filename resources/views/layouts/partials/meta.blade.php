@@ -2,7 +2,9 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47036341-4"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-47036341-4');
@@ -13,7 +15,22 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<meta name="theme-color" content="#da4917">
+
 <title>@yield('title') | {{ setting('site.title') }}</title>
+
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Thought Reactor",
+  "url" : "https://thought-reactor.net",
+  "sameAs" : [ "https://www.facebook.com/ThoughtReactor",
+    "https://twitter.com/thought_reactor",
+	"https://www.youtube.com/TheThoughtReactor"]
+}
+
+
+</script>
 
 @if(isset($post))
     <meta name="description" content="{{ $post->excerpt }}"/>
