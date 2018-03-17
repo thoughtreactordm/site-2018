@@ -8,6 +8,7 @@
             @include('blog.list')
         @endforeach
     @else
+        <section class="section is-medium is-hidden-tablet"></section>
         <section class="hero is-medium">
             <div class="hero-body has-text-centered">
                 <img src="/img/meeseeks.png" alt="Oooo yeah!">
