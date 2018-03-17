@@ -17,6 +17,9 @@
 
 <meta name="theme-color" content="#da4917">
 
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="canonical" href="{{ url()->current() }}">
+
 <title>@yield('title') | {{ setting('site.title') }}</title>
 
 <script type="application/ld+json">
@@ -28,6 +31,7 @@
     "https://twitter.com/thought_reactor",
 	"https://www.youtube.com/TheThoughtReactor"]
 }
+
 
 
 </script>
