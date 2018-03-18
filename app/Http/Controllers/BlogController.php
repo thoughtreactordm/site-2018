@@ -13,6 +13,7 @@ class BlogController extends Controller
         $related = Post::latest()
             ->where('category_id', $post->category_id)
             ->where('id', '<>', $post->id)
+            ->whereStatus('PUBLISHED')
             ->orderBy('created_at', 'desc')
             ->take(3)
             ->get();
