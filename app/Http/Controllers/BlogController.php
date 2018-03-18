@@ -7,6 +7,15 @@ use App\Post;
 
 class BlogController extends Controller
 {
+    public function index()
+    {
+        $posts = Post::latest()
+            ->whereStatus('PUBLISHED')
+            ->paginate(3);
+
+        return view('pages.home', compact('posts'));
+    }
+
     public function show($slug)
     {
         $post = Post::whereSlug($slug)->first();
