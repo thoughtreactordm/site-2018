@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    @if(!count($related))
+    @if(count($related))
         <section class="section related has-text-centered">
             <h3 class="title is-3">
                 Related Posts
