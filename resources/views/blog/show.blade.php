@@ -36,18 +36,20 @@
         </div>
     </div>
 
-    <section class="section related has-text-centered">
-        <h3 class="title is-3">
-            Related Posts
-        </h3>
-        <div class="columns">
-            @foreach($related as $post)
-                <div class="column is-4">
-                    @include('blog.card')
-                </div>
-            @endforeach
-        </div>
-    </section>
+    @if(!count($related))
+        <section class="section related has-text-centered">
+            <h3 class="title is-3">
+                Related Posts
+            </h3>
+            <div class="columns">
+                @foreach($related as $post)
+                    <div class="column is-4">
+                        @include('blog.card')
+                    </div>
+                @endforeach
+            </div>
+        </section>
+    @endif
 
 @endsection
 
