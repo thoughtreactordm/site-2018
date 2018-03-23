@@ -41,7 +41,7 @@
             <h3 class="title is-3">
                 Related Posts
             </h3>
-            <div class="columns">
+            <div class="columns is-centered">
                 @foreach($related as $post)
                     <div class="column is-4">
                         @include('blog.card')
