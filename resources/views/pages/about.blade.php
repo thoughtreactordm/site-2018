@@ -36,6 +36,10 @@ $page = ['description' => 'Thought Reactor, a small indie game studio, is focuse
                     challenging to master. We're just getting started - <em>come join us on our journey by following the
                         development blog on the site.</em>
                 </p>
+
+                <p>
+                    We are currently developing a FPS puzzle-platformer called <em><a href="https://parabolagame.com">PARABOLA</a></em>. To keep up with development, demo builds, and more please checkout the official site and social media channels.
+                </p>
             </div>
 
             <div class="column">
